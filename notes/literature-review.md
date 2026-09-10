@@ -1,44 +1,38 @@
-# Dataflow programming: a literature review
+# From Algorithm Semantics to Processing Elements
 
-The recurring question in this literature is how to turn dependencies into efficient execution while retaining a useful way to reason about program behavior. Four concerns recur: meaning, locality, finite resources and composition. Their relationship is more informative than treating every use of “dataflow” as the same programming model.
+**A Survey of Spatial High-Level Synthesis**
 
-## Meaning and execution
+Lingzhi Yang — Applied Mathematics and Statistics, Stony Brook University
 
-[Kahn's process networks](https://www.cs.columbia.edu/~sedwards/papers/kahn1974semantics.pdf) provide a semantic starting point; [Dennis and Misunas](https://www.cs.cmu.edu/~15740-f20/papers/dennis-75.pdf) make data-driven execution concrete in a processor design. [Lee and Messerschmitt](https://ptolemy.berkeley.edu/publications/papers/87/staticscheduling/) study the scheduling opportunities created by fixed token rates. Together they motivate a distinction between mathematical behavior and the protocol used to execute it with finite buffers.
+Research manuscript, 10 September 2026
 
-For compiler design, a graph edge needs a defined meaning. It may denote a tensor value, an ordered stream, a memory dependency or a physical channel. State, control and feedback need equally explicit interpretation. A pure dependency DAG is useful for some computations but does not cover every iterative numerical program.
+**[Read the PDF](spatial-hls-survey.pdf)** · **[TeX source](spatial-hls-survey.tex)** · **[Portable source package](spatial-hls-survey-source.zip)** · **[References](../papers/references.bib)**
 
-## Locality and space-time mapping
+The manuscript connects two problems: constructing useful spatial algorithms and realizing them as finite PE programs. It studies the mathematical and operational objects used at each stage, rather than treating all graph representations as equivalent or equating a list of implemented operators with a general compiler.
 
-[Systolic architectures](https://www.eecs.harvard.edu/~htk/publication/1982-kung-why-systolic-architecture.pdf) connect algorithm design to data reuse and communication. The [red-blue pebble game](https://perso.ens-lyon.fr/loris.marchal/docs-data-aware/hong_kung_red_blue_pebble_game_STOC81.pdf) and [Roofline](https://doi.org/10.1145/1498765.1498785) offer complementary ways to reason about storage and traffic. [AutoSA](https://github.com/UCLA-VAST/AutoSA) supplies a compiler example of turning loop computations into FPGA systolic arrays.
+| Chapters | Content |
+|---|---|
+| 1–3 | Scope, historical distinctions, values/state, stream semantics, rates, finite storage and progress |
+| 4 | Constructive methods: program invariants, FLAME, recurrence localization, a worked FIR chain, projection/offsets and retiming |
+| 5–7 | Scheduling and routing, memory costs, SPL/Sigma-SPL/HSPL, a two-PE FFT derivation and modern compiler representations |
+| 8–9 | GEMM recurrence and SUMMA realization; a bounded-deadlock counterexample; actual CSL, IRON and Metalium interfaces |
+| 10 | Interval dynamic programming, sparse iteration, streaming Givens QR versus TSQR, iterative solvers, attention and wafer-scale state |
+| 11–12 | A constructive compiler design, cross-family comparison, search/acceptance conditions, numerical composition and research questions |
+| Appendix A | Finite prototype, original bounded SDK evidence, commands and a conditional ownership proof |
+| Appendix B | Pinned source versions, reading scope and limits |
 
-The design implication is to retain multiple mappings for one algorithm. Placement, tiling and movement determine buffering and utilization. A schedule that works well for a dense regular kernel need not serve a reduction, sparse solver or persistent-state workload equally well.
+The paper is a selective technical synthesis, not an exhaustive bibliometric review. Mathematical derivations, attributed literature results, inspected software behavior and measurements are distinguished. The prototype does not implement the proposed multi-backend compiler. Its single SDK experiment does not establish hardware performance or full-model inference.
 
-## Programming models and compiler representations
+## Build
 
-[Halide](https://people.csail.mit.edu/jrk/halide-pldi13.pdf), [Exo](https://doi.org/10.1145/3519939.3523446) and [Allo](https://www.csl.cornell.edu/~zhiruz/pdfs/allo-pldi2024.pdf) make scheduling and hardware customization reusable concerns. [Dato](https://arxiv.org/abs/2509.06794v1) brings task communication and layout into the programming interface. [DaCe](https://spcl.inf.ethz.ch/Publications/.pdf/dace-sc19.pdf) and [Calyx](https://www.cs.cornell.edu/~asampson/media/papers/calyx-asplos2021.pdf) provide contrasting approaches to representing state, movement and control.
+From the repository root, using Tectonic 0.17.0:
 
-These works motivate an interface between mathematical computation and physical implementation that can survive composition. For a spatial compiler, that interface should cover both values and execution obligations. Compatible shapes alone do not guarantee compatible communication order, state ownership or resource lifetimes.
-
-## Finite resources and current spatial systems
-
-Elastic and hybrid HLS supplies relevant techniques for finite implementations: [DASS](https://doi.org/10.1109/TCAD.2021.3065902) combines scheduling styles, [CRUSH](https://doi.org/10.1145/3669940.3707273) addresses sharing through credits, and [ElasticMiter](https://www.epfl.ch/labs/lap/wp-content/uploads/2026/03/ElakhrasMar25-ElasticMiter-Formally-Verified-Dataflow-Circuit-Rewrites-ASPLOS25.pdf) examines verified rewrites. [Resource and phase awareness](https://dynamo.ethz.ch/wp-content/uploads/2025/06/Bouilloud_HEART25_ResourceAndPhaseAwareness.pdf) is another relevant direction. Their hardware context differs from CSL, so the abstraction must be adapted rather than assumed equivalent.
-
-[AIR](https://arxiv.org/abs/2510.14871v1), [ARIES](https://www.csl.cornell.edu/~zhiruz/pdfs/aries-fpga2025.pdf) and [TL](https://arxiv.org/abs/2512.22168v1) connect high-level computation to physical spatial resources. [WaferLLM](https://www.usenix.org/conference/osdi25/presentation/he) and [MACH](https://arxiv.org/abs/2506.15875v1) bring direct wafer-scale experience. For Pragma, the next question is how to retain useful target-specific schedules while reducing the need for a special compiler path for every complete graph.
-
-```mermaid
-flowchart TB
-  A[Semantics: processes, actors and state] --> D[Composable spatial compilation]
-  B[Algorithms: locality and space-time mapping] --> D
-  C[Protocols: finite buffers and resources] --> D
-  E[Compiler representations and reusable schedules] --> D
-  D --> F[Executable programs with explicit validation scope]
+```sh
+tectonic notes/spatial-hls-survey.tex
 ```
 
-This is a conceptual synthesis, not a claim of one direct historical lineage. The proposed Pragma architecture and completion gates are in the [design study](pragma-hls-design.md), with a [Chinese explanation](pragma-hls-design.zh-CN.md).
+The manuscript uses the ACM `acmart` class in `acmsmall,nonacm` mode. Tectonic resolves the TeX packages; the bibliography is `papers/references.bib`. All four figures are drawn in TikZ within the TeX source, so no external image files are required. No conference acceptance, ACM publication or arXiv submission is implied by this layout. The author can revise the source before submission.
 
-## Scope
+The portable ZIP contains the TeX source, BibTeX database, generated bibliography, license and build note in one directory. After extraction, run `tectonic spatial-hls-survey.tex`. Its bibliography path is adjusted for that directory; the rebuilt 35-page PDF has identical extracted text on every page to the repository PDF.
 
-The 10 September 2026 review covers 38 selected papers. Eight main bodies were read in full: Kahn, Dennis/Misunas, Kung, Allo, MACH v1, AIR v1, TL v1 and WaferLLM. Dato and the 2026 Dynamatic/MLIR experience report received targeted review; the other entries remain discovery-level. Full reading scopes and limitations are recorded in [reading-notes.md](reading-notes.md); five upstream projects and Pragma were inspected at pinned commits in [code-ecosystem.md](code-ecosystem.md). No toolchain was built or benchmarked for this review.
-
-The selection emphasizes compiler design for Pragma. It does not exhaust tagged-token history, formal concurrency, numerical algorithm families or commercial serving systems. Current repositories may differ from the implementations described in their papers. The architecture proposal is a research synthesis, not an implemented capability or a proof of historical novelty.
+The [reading notes](reading-notes.md) and [research revisions](research-revisions.md) record the evidence and substantive changes behind the manuscript. The supporting [Pragma experiment](https://github.com/lingzhi227/MIMD_dataflow/blob/main/docs/research/spatial-contracts.md) has its own reproduction requirements.

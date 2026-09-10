@@ -3,3 +3,11 @@ __pycache__/
 *.pyc
 .local-papers/
 .private/
+
+# TeX intermediates
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz

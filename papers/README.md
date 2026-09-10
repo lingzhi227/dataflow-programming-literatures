@@ -1,7 +1,7 @@
 # Papers
 
-PDFs are stored here directly. [metadata.json](metadata.json) contains the 38 bibliographic records, summaries, source links, versions and reading status; [references.bib](references.bib) provides citations.
+The 69 records in [metadata.json](metadata.json) include complete author lists, source links, summaries, publication versions, reading scope and PDF provenance. [references.bib](references.bib) includes these works and the versioned software/documentation references used by the manuscript.
 
-The 10 stored PDFs are unchanged copies under CC BY 4.0 or CC0. Each record's `pdf_provenance` identifies its authors through the enclosing record, original source, licence and licence evidence, retrieval date and SHA-256. The original authors retain their rights. For papers without a stored copy, follow the source link in the metadata or the [main table](../README.md#papers).
+The 12 stored PDFs are unchanged copies under recorded CC BY 4.0 or CC0 terms. Each PDF's metadata records the exact source, license evidence, retrieval date and SHA-256. Papers without confirmed redistribution permission are linked rather than copied. Reading depth and download status are independent fields.
 
-The collection retrieved 33 PDFs for personal reading; five source endpoints were unavailable. Individual retrieval outcomes and version differences are recorded in the metadata. `full_main_text`, `targeted` and `discovery` describe reading depth, independently of download status.
+The [main paper table](../README.md#papers) is the reader-facing index.
