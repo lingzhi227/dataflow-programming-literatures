@@ -2,7 +2,7 @@
 
 **A Survey of Spatial High-Level Synthesis**
 
-Lingzhi Yang — Applied Mathematics and Statistics, Stony Brook University
+Lingzhi Yang — Stony Brook University
 
 Research manuscript, 10 September 2026
 

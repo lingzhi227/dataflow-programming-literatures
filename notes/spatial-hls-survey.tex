@@ -2,15 +2,11 @@
 \setcopyright{none}
 \settopmatter{printacmref=false}
 \renewcommand\footnotetextcopyrightpermission[1]{}
-% Keep the complete affiliation under the title in this non-ACM manuscript.
+% Omit the address footnote while retaining the default acmart author line.
 \authorsaddresses{}
 \makeatletter
-\renewcommand{\department}[2][0]{#2\par\noindent}
-\renewcommand{\institution}[1]{\global\@ACM@instpresenttrue#1\par\noindent}
-% Geographic fields are intentionally omitted in this non-ACM author manuscript.
+% Permit an institution-only affiliation in this non-ACM author manuscript.
 \renewcommand{\@ACM@checkaffil}{}
-\patchcmd{\@typeset@author@line}{\unskip,}{\par\noindent}{}%
-  {\ClassError{spatial-hls-survey}{Unable to format the author block}{Check the acmart author-line definition.}}
 \makeatother
 \usepackage{amsmath,mathtools,bm,booktabs,tabularx,listings,tikz}
 \usepackage{xurl}
@@ -32,7 +28,7 @@
 \setlength{\headheight}{14pt}
 \title[From Algorithm Semantics to Processing Elements]{From Algorithm Semantics to Processing Elements: A Survey of Spatial High-Level Synthesis}
 \author{Lingzhi Yang}
-\affiliation{\department{Applied Mathematics and Statistics}\institution{Stony Brook University}}
+\affiliation{\institution{Stony Brook University}}
 \date{September 10, 2026}
 \begin{document}
 \begin{abstract}
