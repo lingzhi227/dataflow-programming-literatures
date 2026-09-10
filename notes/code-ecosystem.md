@@ -1,4 +1,4 @@
-# Phase 4: code and tools audit
+# Compiler implementations and Pragma
 
 Snapshot date: 2026-09-10. Read-only inspection of pinned source files and documentation. None of these toolchains was built or benchmarked for this report. Stars are a dated discoverability metric, not evidence of correctness.
 

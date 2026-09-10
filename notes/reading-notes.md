@@ -1,4 +1,4 @@
-# Phase 3: full-paper reading notes
+# Reading notes
 
 Reviewed 2026-09-10. Eight main papers were read; downloads and selective searches are labelled separately. Notes summarize findings; design questions are our interpretation, not claims made by the authors.
 

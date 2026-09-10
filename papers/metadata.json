@@ -33,7 +33,7 @@
     "local_pdf": null,
     "redistribution_license": null,
     "redistribution_note": "Linked only: public redistribution permission for this exact PDF was not confirmed under this collection policy.",
-    "retrieval_note": "Original full-text endpoint was unavailable during collection; bibliographic record retained. See access report."
+    "retrieval_note": "Conference-linked preprint endpoint returned HTTP 404."
   },
   {
     "id": "xu2026mlir",
@@ -57,9 +57,21 @@
     "version_note": null,
     "checked_on": "2026-09-10",
     "retrieval_status": "downloaded",
-    "local_pdf": "papers/2026/xu2026mlir.pdf",
+    "local_pdf": "papers/xu2026mlir.pdf",
     "redistribution_license": "CC-BY-4.0",
-    "archived_version": "v1"
+    "archived_version": "v1",
+    "pdf_provenance": {
+      "source_url": "https://arxiv.org/pdf/2603.19856v1",
+      "version": "v1",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "https://arxiv.org/abs/2603.19856v1",
+      "license_evidence_location": "https://arxiv.org/abs/2603.19856v1",
+      "modifications": "None; PDF bytes preserved.",
+      "bytes": 451136,
+      "sha256": "64dbd7580867590e3a04db18df18709dafbcb07fd967b4dbd7891b1fab74a6a6",
+      "retrieved_on": "2026-09-10"
+    }
   },
   {
     "id": "vanessendelft2025",
@@ -85,9 +97,21 @@
     "version_note": null,
     "checked_on": "2026-09-10",
     "retrieval_status": "downloaded",
-    "local_pdf": "papers/2025/vanessendelft2025.pdf",
+    "local_pdf": "papers/vanessendelft2025.pdf",
     "redistribution_license": "CC0-1.0",
-    "archived_version": "v1"
+    "archived_version": "v1",
+    "pdf_provenance": {
+      "source_url": "https://arxiv.org/pdf/2506.15875v1",
+      "version": "v1",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence": "https://arxiv.org/abs/2506.15875v1",
+      "license_evidence_location": "https://arxiv.org/abs/2506.15875v1",
+      "modifications": "None; PDF bytes preserved.",
+      "bytes": 1104404,
+      "sha256": "548678d96d0ced8d92e0be182a1a97d9dfddf56b45226cbe0e1d233de40cbe91",
+      "retrieved_on": "2026-09-10"
+    }
   },
   {
     "id": "aries2025",
@@ -116,8 +140,20 @@
     "version_note": null,
     "checked_on": "2026-09-10",
     "retrieval_status": "downloaded",
-    "local_pdf": "papers/2025/aries2025.pdf",
-    "redistribution_license": "CC-BY-4.0"
+    "local_pdf": "papers/aries2025.pdf",
+    "redistribution_license": "CC-BY-4.0",
+    "pdf_provenance": {
+      "source_url": "https://www.csl.cornell.edu/~zhiruz/pdfs/aries-fpga2025.pdf",
+      "version": "author-hosted publication PDF",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "https://www.csl.cornell.edu/~zhiruz/pdfs/aries-fpga2025.pdf",
+      "license_evidence_location": "PDF first-page licence notice",
+      "modifications": "None; PDF bytes preserved.",
+      "bytes": 940727,
+      "sha256": "39b358bde7c1b6a1fceca4ed4543aecb064b559a6ccfa9dd1b3b3dd66689088f",
+      "retrieved_on": "2026-09-10"
+    }
   },
   {
     "id": "crush2025",
@@ -140,8 +176,20 @@
     "version_note": null,
     "checked_on": "2026-09-10",
     "retrieval_status": "downloaded",
-    "local_pdf": "papers/2025/crush2025.pdf",
-    "redistribution_license": "CC-BY-4.0"
+    "local_pdf": "papers/crush2025.pdf",
+    "redistribution_license": "CC-BY-4.0",
+    "pdf_provenance": {
+      "source_url": "https://dynamo.ethz.ch/wp-content/uploads/2025/06/Xu_ASPLOS25_CRUSH.pdf",
+      "version": "author-hosted publication PDF",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "https://dynamo.ethz.ch/wp-content/uploads/2025/06/Xu_ASPLOS25_CRUSH.pdf",
+      "license_evidence_location": "PDF first-page licence notice",
+      "modifications": "None; PDF bytes preserved.",
+      "bytes": 2033641,
+      "sha256": "b1deaaea5ba2d831a12cff7f66de63b02e80519e0c0340cbf7fcfe487caccc89",
+      "retrieved_on": "2026-09-10"
+    }
   },
   {
     "id": "fang2025dato",
@@ -169,9 +217,21 @@
     "version_note": null,
     "checked_on": "2026-09-10",
     "retrieval_status": "downloaded",
-    "local_pdf": "papers/2025/fang2025dato.pdf",
+    "local_pdf": "papers/fang2025dato.pdf",
     "redistribution_license": "CC-BY-4.0",
-    "archived_version": "v1"
+    "archived_version": "v1",
+    "pdf_provenance": {
+      "source_url": "https://arxiv.org/pdf/2509.06794v1",
+      "version": "v1",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "https://arxiv.org/abs/2509.06794v1",
+      "license_evidence_location": "https://arxiv.org/abs/2509.06794v1",
+      "modifications": "None; PDF bytes preserved.",
+      "bytes": 1636352,
+      "sha256": "c630c7281d0a4a213e935fb8dd5d9488b970b696e0871326fa6eca2a572314ee",
+      "retrieved_on": "2026-09-10"
+    }
   },
   {
     "id": "elasticmiter2025",
@@ -197,8 +257,20 @@
     "version_note": null,
     "checked_on": "2026-09-10",
     "retrieval_status": "downloaded",
-    "local_pdf": "papers/2025/elasticmiter2025.pdf",
-    "redistribution_license": "CC-BY-4.0"
+    "local_pdf": "papers/elasticmiter2025.pdf",
+    "redistribution_license": "CC-BY-4.0",
+    "pdf_provenance": {
+      "source_url": "https://www.epfl.ch/labs/lap/wp-content/uploads/2026/03/ElakhrasMar25-ElasticMiter-Formally-Verified-Dataflow-Circuit-Rewrites-ASPLOS25.pdf",
+      "version": "author-hosted publication PDF",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "https://www.epfl.ch/labs/lap/wp-content/uploads/2026/03/ElakhrasMar25-ElasticMiter-Formally-Verified-Dataflow-Circuit-Rewrites-ASPLOS25.pdf",
+      "license_evidence_location": "PDF first-page licence notice",
+      "modifications": "None; PDF bytes preserved.",
+      "bytes": 2124345,
+      "sha256": "bc48bbd88d874c4ec5e63853d22e75f0b495564cba60ad151a3e39f7b49d3bf6",
+      "retrieved_on": "2026-09-10"
+    }
   },
   {
     "id": "wang2025air",
@@ -220,9 +292,21 @@
     "version_note": null,
     "checked_on": "2026-09-10",
     "retrieval_status": "downloaded",
-    "local_pdf": "papers/2025/wang2025air.pdf",
+    "local_pdf": "papers/wang2025air.pdf",
     "redistribution_license": "CC-BY-4.0",
-    "archived_version": "v1"
+    "archived_version": "v1",
+    "pdf_provenance": {
+      "source_url": "https://arxiv.org/pdf/2510.14871v1",
+      "version": "v1",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "https://arxiv.org/abs/2510.14871v1",
+      "license_evidence_location": "https://arxiv.org/abs/2510.14871v1",
+      "modifications": "None; PDF bytes preserved.",
+      "bytes": 1306270,
+      "sha256": "a4963277fa31d3aba01fe55f7f6c5ce24d15af0a2dd6ff9f4de7194bfd01272b",
+      "retrieved_on": "2026-09-10"
+    }
   },
   {
     "id": "bouilloud2025",
@@ -246,8 +330,20 @@
     "version_note": null,
     "checked_on": "2026-09-10",
     "retrieval_status": "downloaded",
-    "local_pdf": "papers/2025/bouilloud2025.pdf",
-    "redistribution_license": "CC-BY-4.0"
+    "local_pdf": "papers/bouilloud2025.pdf",
+    "redistribution_license": "CC-BY-4.0",
+    "pdf_provenance": {
+      "source_url": "https://dynamo.ethz.ch/wp-content/uploads/2025/06/Bouilloud_HEART25_ResourceAndPhaseAwareness.pdf",
+      "version": "author-hosted publication PDF",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "https://dynamo.ethz.ch/wp-content/uploads/2025/06/Bouilloud_HEART25_ResourceAndPhaseAwareness.pdf",
+      "license_evidence_location": "PDF first-page licence notice",
+      "modifications": "None; PDF bytes preserved.",
+      "bytes": 1804271,
+      "sha256": "bf7ebb8ba123012d59ebfd98fc762b6b17d50083d74cd74be6ee7eb22cd5ad6b",
+      "retrieved_on": "2026-09-10"
+    }
   },
   {
     "id": "rewire2025",
@@ -307,9 +403,21 @@
     "version_note": null,
     "checked_on": "2026-09-10",
     "retrieval_status": "downloaded",
-    "local_pdf": "papers/2025/li2025tl.pdf",
+    "local_pdf": "papers/li2025tl.pdf",
     "redistribution_license": "CC-BY-4.0",
-    "archived_version": "v1"
+    "archived_version": "v1",
+    "pdf_provenance": {
+      "source_url": "https://arxiv.org/pdf/2512.22168v1",
+      "version": "v1",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "https://arxiv.org/abs/2512.22168v1",
+      "license_evidence_location": "https://arxiv.org/abs/2512.22168v1",
+      "modifications": "None; PDF bytes preserved.",
+      "bytes": 456490,
+      "sha256": "b53b39c898cd5f83c0f838cd4afeea80aace76fd06d0c3bc62ed9c63547ecc49",
+      "retrieved_on": "2026-09-10"
+    }
   },
   {
     "id": "he2025",
@@ -392,8 +500,20 @@
     "version_note": null,
     "checked_on": "2026-09-10",
     "retrieval_status": "downloaded",
-    "local_pdf": "papers/2024/xu2024.pdf",
-    "redistribution_license": "CC-BY-4.0"
+    "local_pdf": "papers/xu2024.pdf",
+    "redistribution_license": "CC-BY-4.0",
+    "pdf_provenance": {
+      "source_url": "https://dynamo.ethz.ch/wp-content/uploads/2024/04/Xu_FPGA24_SuppressingSpuriousDynamism.pdf",
+      "version": "author-hosted publication PDF",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "https://dynamo.ethz.ch/wp-content/uploads/2024/04/Xu_FPGA24_SuppressingSpuriousDynamism.pdf",
+      "license_evidence_location": "PDF first-page licence notice",
+      "modifications": "None; PDF bytes preserved.",
+      "bytes": 1790505,
+      "sha256": "76beadc13a525ec729d23d54330196c57bf781ddb5e9b4ca752318f070b22849",
+      "retrieved_on": "2026-09-10"
+    }
   },
   {
     "id": "cheng2021dass",
@@ -450,7 +570,7 @@
     "local_pdf": null,
     "redistribution_license": null,
     "redistribution_note": "Linked only: public redistribution permission for this exact PDF was not confirmed under this collection policy.",
-    "retrieval_note": "Original full-text endpoint was unavailable during collection; bibliographic record retained. See access report."
+    "retrieval_note": "Author PDF endpoint returned HTML rather than PDF."
   },
   {
     "id": "nigam2021",
@@ -504,7 +624,7 @@
     "local_pdf": null,
     "redistribution_license": null,
     "redistribution_note": "Linked only: public redistribution permission for this exact PDF was not confirmed under this collection policy.",
-    "retrieval_note": "Original full-text endpoint was unavailable during collection; bibliographic record retained. See access report."
+    "retrieval_note": "Author-hosted PDF endpoint timed out."
   },
   {
     "id": "tapa2021",
@@ -842,7 +962,7 @@
     "local_pdf": null,
     "redistribution_license": null,
     "redistribution_note": "Linked only: public redistribution permission for this exact PDF was not confirmed under this collection policy.",
-    "retrieval_note": "Original full-text endpoint was unavailable during collection; bibliographic record retained. See access report."
+    "retrieval_note": "Institutional PDF endpoints returned HTTP 403."
   },
   {
     "id": "thies2002",
@@ -920,7 +1040,7 @@
     "local_pdf": null,
     "redistribution_license": null,
     "redistribution_note": "Linked only: public redistribution permission for this exact PDF was not confirmed under this collection policy.",
-    "retrieval_note": "Original full-text endpoint was unavailable during collection; bibliographic record retained. See access report."
+    "retrieval_note": "Author PDF endpoint returned HTTP 404 during collection."
   },
   {
     "id": "kung1982",

@@ -111,7 +111,7 @@ Useful rejection cases include a feedback cycle with no enabling token; two acto
 
 Use MLIR incrementally if it improves a concrete vertical slice. Reuse established tensor, arithmetic, loop and memory representations where their semantics match. Add explicit state/channel/resource constructs where they do not. Keep the existing Python reference and frozen CSL evidence while an adapter is evaluated.
 
-The five pinned source audits identify useful precedents: Allo/Dato for composable schedules and task interfaces; AIR for asynchronous hierarchy and lowering; DaCe for state/data separation; Calyx for explicit orchestration; WaferLLM for concrete wafer algorithms. None is automatically a complete Pragma backend. [Source audit](../notes/code-ecosystem.md).
+The five pinned source audits identify useful precedents: Allo/Dato for composable schedules and task interfaces; AIR for asynchronous hierarchy and lowering; DaCe for state/data separation; Calyx for explicit orchestration; WaferLLM for concrete wafer algorithms. None is automatically a complete Pragma backend. [Source audit](code-ecosystem.md).
 
 The 2026 Dynamatic experience report raises practical risks around edge metadata, control representation and mismatched LLVM dependencies. Test these during integration rather than assuming that adopting MLIR resolves semantic design. [LATTE report](https://arxiv.org/abs/2603.19856v1).
 
@@ -172,8 +172,8 @@ Unresolved decisions include the useful static subset for progress checking, vis
 
 ## Evidence and reading material
 
-- [Paper catalogue](../README.md#paper-catalogue): complete curated list, metadata and one-line introductions.
-- [Full-paper notes](../notes/reading-notes.md): eight main-text readings with version and limitation notes.
-- [Pinned source audit](../notes/code-ecosystem.md): inspected upstream and Pragma files; no build claims.
-- [Review methodology](../docs/METHODOLOGY.md): selection, follow-up additions and access limitations.
-- [BibTeX](../references.bib): bibliographic records; explicitly abbreviated author lists where applicable.
+- [Paper catalogue](../README.md#papers): complete curated list, metadata and one-line introductions.
+- [Full-paper notes](reading-notes.md): eight main-text readings with version and limitation notes.
+- [Pinned source audit](code-ecosystem.md): inspected upstream and Pragma files; no build claims.
+- [Review scope](literature-review.md#scope): selection, follow-up additions and access limitations.
+- [BibTeX](../papers/references.bib): bibliographic records; explicitly abbreviated author lists where applicable.
