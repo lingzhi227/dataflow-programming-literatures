@@ -2,7 +2,7 @@
 
 **A Survey of Spatial High-Level Synthesis**
 
-Lingzhi Yang — Stony Brook University
+Lingzhi Yang — Department of Applied Mathematics and Statistics, Stony Brook University
 
 Research manuscript, 10 September 2026
 
@@ -31,8 +31,10 @@ From the repository root, using Tectonic 0.17.0:
 tectonic notes/spatial-hls-survey.tex
 ```
 
-The manuscript uses the ACM `acmart` class in `acmsmall,nonacm` mode. Tectonic resolves the TeX packages; the bibliography is `papers/references.bib`. All four figures are drawn in TikZ within the TeX source, so no external image files are required. No conference acceptance, ACM publication or arXiv submission is implied by this layout. The author can revise the source before submission.
+The manuscript uses `elsarticle` 3.3 (2020-11-20) with the exact options `[final,3p,times,authoryear]` and the `elsarticle-harv` bibliography style, matching the supplied [formatting reference, version 1](https://arxiv.org/abs/2310.18345v1). The layout is A4, single column, with Times-family text and parenthetical author–year citations. The centered frontmatter has one author and one italic affiliation line; the paper makes no journal-submission or publication claim.
 
-The portable ZIP contains the TeX source, BibTeX database, generated bibliography, license and build note in one directory. After extraction, run `tectonic spatial-hls-survey.tex`. Its bibliography path is adjusted for that directory; the rebuilt 35-page PDF has identical extracted text on every page to the repository PDF.
+Tectonic resolves the standard TeX dependencies, including `elsarticle`, `txfonts`, `fontenc`, `natbib`, `amsmath`, `amsthm`, `mathtools`, `booktabs`, `tabularx`, `listings`, TikZ, `hyperref`, `xurl`, `iftex` and `newunicodechar`. Explicit T1 encoding preserves the template's Times fonts under Tectonic; two XeTeX-only accent mappings preserve Unicode author names. The bibliography is `papers/references.bib`. All four figures are inline TikZ, so no external images are required.
+
+The portable ZIP contains the TeX source, BibTeX database, generated bibliography, license and build note in one directory. After extraction, run `tectonic spatial-hls-survey.tex`. Its bibliography path is adjusted for that directory; the rebuilt 30-page PDF has identical extracted text on every page to the repository PDF.
 
 The [reading notes](reading-notes.md) and [research revisions](research-revisions.md) record the evidence and substantive changes behind the manuscript. The supporting [Pragma experiment](https://github.com/lingzhi227/MIMD_dataflow/blob/main/docs/research/spatial-contracts.md) has its own reproduction requirements.
