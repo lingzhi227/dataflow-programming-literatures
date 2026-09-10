@@ -38,15 +38,6 @@ Arrows show conceptual relationships, not a claim of direct historical descent. 
 | [Methodology](docs/METHODOLOGY.md) · [Access report](docs/ACCESS_REPORT.md) | Selection, reading depth, retrieval outcomes and known limits |
 | [Collection policy](docs/COLLECTION_POLICY.md) | How to add, cite, version and redistribute material |
 
-## Suggested starting route
-
-1. **Kung → Kahn → Lee/Messerschmitt:** separate locality, meaning and scheduling.
-2. **Halide → Allo → Dato:** learn why algorithm, schedule and communication interfaces need separate treatment.
-3. **DaCe/Calyx → AIR → TL:** compare state/control, asynchronous hierarchy and physical mapping.
-4. **WaferLLM → MACH → the Pragma study:** connect wafer algorithms to compiler design and explicit evidence requirements.
-
-These are recommendations for reading, not a claim that every item received a full review here.
-
 ## Paper catalogue
 
 Within each topic, papers appear newest first. **Full** = full main body read, with version-specific notes; **Targeted** = selected content reviewed; **Indexed** = metadata/abstract or discovery-level inspection. A PDF link is an external source; **Mirror** is a checked-in copy. Published venue and preprint/workshop status are kept distinct.
@@ -114,15 +105,6 @@ Within each topic, papers appear newest first. **Full** = full main body read, w
 | 2025 | **TL: Automatic End-to-End Compiler of Tile-Based Languages for Spatial Dataflow Architectures**<br>Wei Li et al. | preprint | Maps tile-language computations onto spatial cores using device constraints and mapping search. | [Source](https://arxiv.org/abs/2512.22168) · [PDF](https://arxiv.org/pdf/2512.22168v1) · [Mirror](papers/2025/li2025tl.pdf)<br>Full |
 | 2025 | **WaferLLM: Large Language Model Inference at Wafer Scale**<br>Congjie He et al. | OSDI | Develops mesh-aware LLM algorithms and evaluates inference on a wafer-scale processor. | [Source](https://www.usenix.org/system/files/osdi25-he.pdf)<br>Full |
 
-## Version and interpretation notes
-
-- **DASS:** 2021 online publication; the indexed journal issue is March 2022. The stable ID retains 2021.
-- **TAPA:** this entry is the full FCCM 2021 paper, not the FPGA 2021 abstract.
-- **MLIR:** the CGO 2021 publication title differs from the earlier linked arXiv manuscript title; see the catalogue note.
-- **MACH, AIR, TL and Dato:** the indexed manuscripts are labelled preprints. AIR and TL reviews concern v1; TL has a later v2, which is not the basis of the full review here.
-- **WaferLLM:** paper experiments and current repository targets differ; consult the pinned source audit before claiming reproduction.
-- Code licences do not automatically license a paper. Linked-only entries may be freely readable without permitting redistribution in this repository.
-
 ## Update log — newest first
 
 ### 2026-09-10 — Initial curated release
@@ -132,7 +114,3 @@ Within each topic, papers appear newest first. **Full** = full main body read, w
 - Added an English design study, Chinese explanation, conceptual diagrams and milestone completion gates.
 - Included 10 unmodified, licence-verified PDF mirrors with checksums and attribution; documented unavailable downloads separately.
 - Publication checks validate catalogue consistency, local document links and every mirrored PDF's hash and header. This does not constitute compiler or hardware validation.
-
-## Attribution and contributions
-
-Original editorial material in this collection is [CC BY 4.0](LICENSE.md). Third-party PDFs keep their individual licences in [ATTRIBUTION](papers/ATTRIBUTION.md). Metadata should credit the original authors, and research claims should cite the papers themselves. Corrections and additional primary sources are welcome through issues or pull requests.
